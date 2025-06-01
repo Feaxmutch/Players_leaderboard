@@ -12,3 +12,4 @@ F:\данил\Projects\visual_studio_projects\IJ_projects\linq\Players leaderboa
 F:\данил\Projects\visual_studio_projects\IJ_projects\linq\Players leaderboard\Players leaderboard\obj\Debug\net8.0\Players leaderboard.pdb
 F:\данил\Projects\visual_studio_projects\IJ_projects\linq\Players leaderboard\Players leaderboard\obj\Debug\net8.0\Players leaderboard.genruntimeconfig.cache
 F:\данил\Projects\visual_studio_projects\IJ_projects\linq\Players leaderboard\Players leaderboard\obj\Debug\net8.0\ref\Players leaderboard.dll
+F:\данил\Projects\visual_studio_projects\IJ_projects\linq\Players leaderboard\Players leaderboard\obj\Debug\net8.0\Players leaderboard.sourcelink.json

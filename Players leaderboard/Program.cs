@@ -28,7 +28,7 @@ namespace Players_leaderboard
                 new("Barorien", 91, 818),
             };
 
-            Database database = new(players);
+            Database database = new(players, 3);
             DatabaseView view = new(database);
             view.ShowLeaderboards();
             Console.ReadKey();
@@ -76,13 +76,13 @@ namespace Players_leaderboard
         private readonly Leaderboard _levelLeaderboard;
         private readonly Leaderboard _powerLeaderboard;
 
-        public Database(List<Player> players)
+        public Database(List<Player> players, int playersInLeaderboard)
         {
             ArgumentNullException.ThrowIfNull(players);
 
             _players = players;
-            _levelLeaderboard = new(player => player.Level, 3);
-            _powerLeaderboard = new(player => player.Power, 3);
+            _levelLeaderboard = new(player => player.Level, playersInLeaderboard);
+            _powerLeaderboard = new(player => player.Power, playersInLeaderboard);
         }
 
         public List<Player> GetLevelLeaderboard()
@@ -112,8 +112,7 @@ namespace Players_leaderboard
 
         public List<Player> OrderPlayers(List<Player> players)
         {
-            var sortedPlayers = players.OrderByDescending(_filter).ToList();
-            sortedPlayers.RemoveRange(_maxPlayers, sortedPlayers.Count - _maxPlayers);
+            var sortedPlayers = players.OrderByDescending(_filter).Take(_maxPlayers).ToList();
             return sortedPlayers;
         }
     }

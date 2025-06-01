@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Players leaderboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6de19befe2808bb6fc64991fd08ddaabd168dc7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Players leaderboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Players leaderboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
